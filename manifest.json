@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "PinPoint Editor",
   "version": "1.0.0",
-  "description": "Visually edit any page — drag elements, edit text, inspect & resize fonts. Edits persist per-page across reloads until you clear them.",
+  "description": "Visually edit any page: drag elements, edit text, inspect & resize fonts. Edits persist across reloads until you clear them.",
   "author": "Ashik Chapagain",
   "homepage_url": "https://github.com/projectashik/pinpoint",
   "permissions": ["storage", "activeTab", "scripting"],

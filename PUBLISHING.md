@@ -28,7 +28,7 @@ zip -r pinpoint-editor.zip manifest.json background.js content.js content.css ic
 ## Listing copy (reuse across stores)
 
 - **Name:** PinPoint Editor
-- **Summary (≤132 chars):** Visually edit any web page — drag elements, edit text, inspect & resize fonts. Edits persist across reloads until you clear them.
+- **Summary (≤132 chars):** Visually edit any page: drag elements, edit text, inspect & resize fonts. Edits persist across reloads until you clear them.
 - **Category:** Developer Tools
 - **Single purpose:** Visually inspect and edit any web page in place, with edits saved per-page until removed.
 
