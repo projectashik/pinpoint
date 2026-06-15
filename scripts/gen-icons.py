@@ -63,5 +63,5 @@ def write_png(path, size):
         f.write(png)
     print("wrote", path, size, "x", size)
 
-for s in (16, 32, 48, 128):
+for s in (16, 32, 48, 64, 128):
     write_png(f"{OUT}/icon{s}.png", s)
