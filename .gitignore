@@ -1,0 +1,13 @@
+# Build artifacts (regenerate with the zip command in PUBLISHING.md)
+*.zip
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Node (not used today, but keeps future tooling clean)
+node_modules/
+npm-debug.log*

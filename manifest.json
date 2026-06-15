@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "name": "PinPoint Editor",
+  "version": "1.0.0",
+  "description": "Visually edit any page — drag elements, edit text, inspect & resize fonts. Edits persist per-page across reloads until you clear them.",
+  "author": "Ashik Chapagain",
+  "homepage_url": "https://github.com/projectashik/pinpoint",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "PinPoint Editor — toggle editor (or press Alt+Shift+V)",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js",
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "commands": {
+    "toggle-editor": {
+      "suggested_key": {
+        "default": "Alt+Shift+V",
+        "mac": "Alt+Shift+V"
+      },
+      "description": "Toggle the PinPoint Editor"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "pinpoint-editor@superlabs.co",
+      "strict_min_version": "121.0"
+    }
+  }
+}
