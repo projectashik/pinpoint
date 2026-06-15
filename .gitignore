@@ -1,6 +1,11 @@
 # Build artifacts (regenerate with the zip command in PUBLISHING.md)
 *.zip
 
+# Store submission helper docs — kept local, not published
+store-assets/STORE-LISTING.md
+store-assets/PRIVACY-FORM-ANSWERS.md
+store-assets/OPERA-FORM-ANSWERS.md
+
 # OS / editor cruft
 .DS_Store
 Thumbs.db
