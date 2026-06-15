@@ -35,7 +35,10 @@ zip -r pinpoint-editor.zip manifest.json background.js content.js content.css ic
 ### Permission justifications
 - **`<all_urls>` / host access** — the editor must run on whatever page the user chooses to edit.
 - **`storage`** — saves the user's per-page edits **locally** (`chrome.storage.local`); nothing leaves the device.
-- **`activeTab` + `scripting`** — toggle the editor toolbar on the current tab.
+
+> The extension requests only `storage` + host access. `activeTab` and
+> `scripting` were intentionally **not** requested (unused → avoids rejection).
+> Full privacy-tab answers are in `store-assets/PRIVACY-FORM-ANSWERS.md`.
 
 ### Privacy
 No data collection. No analytics. No network requests. All edits are stored
